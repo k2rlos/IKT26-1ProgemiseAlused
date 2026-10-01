@@ -1,15 +1,35 @@
-﻿namespace intro2 //see on projekti nimetus
+﻿namespace intro2
 {
-    internal class Program // see on klassi nimetus
+    internal class Program
     {
-        //meetotit ei saa panna namespace'i, kuna see on klassi sees
-        static void Main(string[] args) //see on peamine meetod, mis käivitatakse programmi käivitamisel
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!"); // see on konsooli väljund, mis prindib "Hello, World" ekraanile
-            //Kui tahad topelt rida teha, siis vajuta Ctrl + D
-            //kui tahad kustutada rida, siis vajuta ctrl + x
+            Console.WriteLine("Värvide valikus on: red, blue, green ja white. + Sisesta värv");
+
+
+            Console.WriteLine("Sisesta värv");
+
+            string color = Console.WriteLine();
+            if (varv == "red")
+            {
+                Console.WriteLine("See on punane värv");
+            }
+            else if (varv == "blue")
+            {
+                Console.WriteLine("See on sinine");
+            }
+            else if (varv == "green")
+            {
+                Console.WriteLine("See on roheline");
+            }
+            else if (varv == "white")
+            {
+                Console.WriteLine("See on valge");
+            }
+            else
+            {
+                Console.WriteLine("Sisestasid suvalise värvi");
+            }
         }
-        //Breakpointi saab panna koodirea vasakule poolele, kus on hall ruut. Kui programm jõuab
-        //selle koodirea juurde, peatub see ja võimaldab teil uurida muutujate väärtusi ja programmi olekut.
     }
 }
